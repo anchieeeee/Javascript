@@ -36,9 +36,9 @@ const consumption = Number(prompt("Podaj spalanie (l/100 km):"));;
 const usedOil = (dystans * spalanie) / 100;
 letprice = usedOil * price;
 
-console.log(`Zużyte paliwo: ${consumption} l`);
+document.write(`Zużyte paliwo: ${consumption} l <br>`);
 
-console.log(`Koszt przejazdu: ${price.toFixed(2)} zł`);
+document.write(`Koszt przejazdu: ${price.toFixed(2)} zł <br>`);
 
 //9
 const fuelPrice = Number(prompt("Podaj cenę benzyny za 1 litr:"));
@@ -47,7 +47,7 @@ const fuelConsumption = Number(prompt("Podaj spalanie (l/100 km):"));
 const fuelUsed = (carDistance * fuelConsumption) / 100;
 const travelCost = fuelUsed * fuelPrice;
 
-console.log(`Koszt przejazdu: ${travelCost.toFixed(2)} zł`);
+document.write(`Koszt przejazdu: ${travelCost.toFixed(2)} zł <br>`);
 
 
 //10
@@ -56,5 +56,5 @@ const tax = interest * 0.19;
 const netProfit = interest - tax;
 const finalAmount = depositAmount + netProfit;
 
-console.log(`Zysk netto: ${netProfit.toFixed(2)} zł`);
-console.log(`Kwota po roku: ${finalAmount.toFixed(2)} zł`);
+document.write(`Zysk netto: ${netProfit.toFixed(2)} zł <br>`);
+document.write(`Kwota po roku: ${finalAmount.toFixed(2)} zł <br>`);
